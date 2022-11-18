@@ -1,0 +1,73 @@
+<html>
+<div align="center" class="logbg">
+<head>
+<meta charset="UTF-8">
+<center>
+<table>
+<tr>
+<td><h1><br>Prediction of Flight Delay<br><br></h1></td>
+</tr>
+</table>
+</center>
+</head>
+<body background='C:\Users\Public\project\templates\flight_4.jpg'>
+<form action="http://localhost:5000/prediction" method="POST" >
+<center>
+<table>
+<tr>
+<td>Enter the flight number:</td>
+<td><input type="number" name="fname"><br></td>
+</tr>
+<tr>
+<td>Month:</td>
+<td><input type="number" name="month"><br></td>
+</tr>
+<tr>
+<td>Day of Month:</td>
+<td><input type="number" name="daymonth"><br></td>
+</tr>
+<tr>
+<td>Day of Week:</td>
+<td><input type="number" name="dayweek"><br></td>
+</tr>
+<tr>
+<td>Origin:</td>
+<td><select name="origin">
+<option value="atl">ATL</option>
+<option value="dtw">DTW</option>
+<option value="sea">SEA</option>
+<option value="msp">MSP</option>
+<option value="jfk">JFK</option>
+</select></td>
+<tr>
+<tr>
+<td>Destination:</td>
+<td><select name="destination">
+<option value="atl">ATL</option>
+<option value="dtw">DTW</option>
+<option value="sea">SEA</option>
+<option value="msp">MSP</option>
+<option value="jfk">JFK</option>
+</select></td>
+<tr>
+<tr>
+<td>Scheduled Departure Time:</td>
+<td><input type="number" name="sdeparttime"><br></td>
+</tr>
+<tr>
+<td>Scheduled Arrival Time:</td>
+<td><input type="number" name="sarrivaltime"><br></td>
+</tr>
+<tr>
+<td>Actual Departure Time:</td>
+<td><input type="number" name="adeparttime"><br></td>
+</tr>
+<tr>
+<td><br><input type="submit" class="btn" value="SUBMIT"></br>
+</tr>
+</table>
+</center>
+</form>
+</body>
+</div>
+</html>
